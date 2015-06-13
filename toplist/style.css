@@ -1,0 +1,48 @@
+* {
+  outline: 1px solid red !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.title {
+  background-color: #33bebe;
+  width: 800px;
+  height: 100px;
+  margin: 20px auto 10px;
+  padding: 35px 0 0 5px;
+  font-size: 3em;
+  font-weight: 300;
+  color: #fafafa;
+}
+
+.app {
+  width: 800px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.screenshot {
+  max-width: 460px;
+  margin: 10px;
+}
+
+.screenshot > img {
+  max-width: 100%;
+}
+
+.description {
+  max-width: 705px;
+  margin: 10px;
+  color: #7C8B88;
+}
+
