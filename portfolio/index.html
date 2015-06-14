@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Dosis:200,400' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="main.css">
-  <meta charset="UTF-8">
-  <title>YUICHI HAGIO</title>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <img src="http://lorempixel.com/100/100/cats/" alt="Header Image">
-      </div>
-      <div class="col-6">
-        <h1 class="header-title">YUICHI HAGIO</h1>
-        <h4 class="header-title">FRONT-END NINJA</h4>
-      </div>
-    </div>
 
-    <hr>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>YUICHI HAGIO</title>
+  </head>
 
-    <div class="row">
-      <div class="col-12 center">
-        <img src="http://placekitten.com/900/350" alt="main image">
-      </div>
-    </div>
+  <body>
+    <div class="container">
 
-    <div class="row">
-      <div class="col-12">
-        <h2>Featured Work</h2>
+      <div class="row header">
+        <div class="col-6 header-img">
+          <img src="http://lorempixel.com/100/100/cats/" alt="Header Image">
+        </div>
+
+        <div class="col-6 header-text">
+          <h1 class="header-title">YUICHI HAGIO</h1>
+          <h4 class="header-title">FRONT-END NINJA</h4>
+        </div>
       </div>
+
+      <hr>    
+
       <div class="row">
-        <div class="col-4 center">
-          <img src="http://lorempixel.com/285/180" alt="work image 1" class="work-img left">
-          <h3 class="work-title work-side">APPIFY</h3>
-          <p class="work-repo">https://github.com/udacity/Appify</p>
-        </div>
-        <div class="col-4 center">
-          <img src="http://lorempixel.com/sports/285/180" alt="work image 2" class="work-img">
-          <h3 class="work-title">SUNFLOWER</h3>
-          <p class="work-repo">https://github.com/udacity/Sunflower</p>
-        </div>
-        <div class="col-4 center">
-          <img src="http://lorempixel.com/city/285/180" alt="work image 3" class="work-img right">
-          <h3 class="work-title work-side">BOKEH</h3>
-          <p class="work-repo">https://github.com/udacity/Bokeh</p>
+        <div class="main-image col-12 center">
+          <img src="http://placekitten.com/900/350" alt="main image">
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-12 feature-title">
+          <h2>Featured Work</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-4 center work">
+            <img src="http://lorempixel.com/285/180" alt="work image 1" class="work-img left">
+            <h3 class="work-title work-side">APPIFY</h3>
+            <a href="" class="work-repo">https://github.com/udacity/Appify</a>
+          </div>
+          <div class="col-4 center work">
+            <img src="http://lorempixel.com/sports/285/180" alt="work image 2" class="work-img">
+            <h3 class="work-title">SUNFLOWER</h3>
+            <a href="" class="work-repo">https://github.com/udacity/Sunflower</a>
+          </div>
+          <div class="col-4 center work">
+            <img src="http://lorempixel.com/city/285/180" alt="work image 3" class="work-img right">
+            <h3 class="work-title work-side">BOKEH</h3>
+            <a href="" class="work-repo">https://github.com/udacity/Bokeh</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-</body>
+  </body>
+
 </html>
