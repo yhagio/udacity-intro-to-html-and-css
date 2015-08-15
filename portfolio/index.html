@@ -1,62 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Dosis:200,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>YUICHI HAGIO</title>
   </head>
 
   <body>
+    <!-- Main Container -->
     <div class="container">
 
-      <div class="row header">
-        <div class="col-6 header-img">
-          <img src="http://lorempixel.com/100/100/cats/" alt="Header Image">
+      <!-- Header -->
+      <header class="row">
+        <div class="col-6 profile-image-box">
+          <img src="./images/profile.jpg" alt="Profile Logo Image" class="profile-image">
         </div>
 
-        <div class="col-6 header-text">
-          <h1 class="header-title">YUICHI HAGIO</h1>
-          <h4 class="header-title">FRONT-END NINJA</h4>
+        <div class="col-6 profile-title">
+          <h1 class="name-title">YUICHI HAGIO</h1>
+          <h4 class="name-title">FRONT-END NINJA</h4>
         </div>
-      </div>
+      </header>
 
-      <hr>    
+      <hr>
 
+      <!-- Main Image -->
       <div class="row">
-        <div class="main-image col-12 center">
-          <img src="http://placekitten.com/900/350" alt="main image">
+        <div class="main-image col-12 center-text">
+          <img src="./images/mini-kitty.jpeg" srcset="./images/mini-kitty.jpeg 400w, ./images/small-kitty.jpeg 600w, ./images/large-kitty.jpeg 800w" alt="main image">
+          <div class="main-overlay center-text">
+            <p class="main-overlay-text">I'm a Front-End Ninja</p>
+          </div>
         </div>
       </div>
 
+      <!-- Featured Works -->
       <div class="row">
         <div class="col-12 feature-title">
           <h2>Featured Work</h2>
         </div>
 
+        <!-- Each Portfolio Section -->
         <div class="row">
-          <div class="col-4 center work">
-            <img src="http://lorempixel.com/285/180" alt="work image 1" class="work-img left">
-            <h3 class="work-title work-side">APPIFY</h3>
-            <a href="" class="work-repo">https://github.com/udacity/Appify</a>
-          </div>
-          <div class="col-4 center work">
-            <img src="http://lorempixel.com/sports/285/180" alt="work image 2" class="work-img">
-            <h3 class="work-title">SUNFLOWER</h3>
-            <a href="" class="work-repo">https://github.com/udacity/Sunflower</a>
-          </div>
-          <div class="col-4 center work">
-            <img src="http://lorempixel.com/city/285/180" alt="work image 3" class="work-img right">
-            <h3 class="work-title work-side">BOKEH</h3>
-            <a href="" class="work-repo">https://github.com/udacity/Bokeh</a>
-          </div>
+
+          <!-- Work 1 -->
+          <section class="col-4 center-text work">
+            <div class="each-work">
+              <a href="https://github.com/udacity/MUZIQUE">
+                <img src="./images/work-one.jpeg" alt="work image 1" class="left">
+                <div class="work-overlay">
+                  <h2>MUZIQUE</h2>
+                  <p>Simple and beautiful</p>
+                </div>
+              </a>
+            </div>
+
+            <h3 class="work-title work-side">MUZIQUE</h3>
+            <p>
+              <a href="https://github.com/udacity/MUZIQUE" class="work-repo">https://github.com/udacity/MUZIQUE</a>
+            </p>
+          </section>
+
+          <!-- Work 2 -->
+          <section class="col-4 center-text work">
+            <div class="each-work">
+              <a href="https://github.com/udacity/MEDINA">
+                <img src="./images/work-two.jpeg" alt="work image 2">
+                <div class="work-overlay">
+                  <h2>MEDINA</h2>
+                  <p>Elegant and addictive</p>
+                </div>
+              </a>
+            </div>
+
+            <h3 class="work-title">MEDINA</h3>
+            <p>
+              <a href="https://github.com/udacity/MEDINA" class="work-repo">https://github.com/udacity/MEDINA</a>
+            </p>
+          </section>
+
+          <!-- Work 3 -->
+          <section class="col-4 center-text work">
+            <div class="each-work">
+              <a href="https://github.com/udacity/CRYPAS">
+                <img src="./images/work-three.jpeg" alt="work image 3" class="right">
+                <div class="work-overlay">
+                  <h2>CRYPAS</h2>
+                  <p>Run Without Issue</p>
+                </div>
+              </a>
+            </div>
+
+            <h3 class="work-title work-side">CRYPAS</h3>
+            <p>
+              <a href="https://github.com/udacity/CRYPAS" class="work-repo">https://github.com/udacity/CRYPAS</a>
+            </p>
+          </section>
+
+          <!-- Work 4 -->
+          <section class="col-4 center-text work">
+            <div class="each-work">
+              <a href="https://github.com/udacity/LEFOOT">
+                <img src="./images/work-four.jpeg" alt="work image 1" class="left">
+                <div class="work-overlay">
+                  <h2>LE FOOT</h2>
+                  <p>Work hard Play hard</p>
+                </div>
+              </a>
+            </div>
+
+            <h3 class="work-title work-side">LE FOOT</h3>
+            <p>
+              <a href="https://github.com/udacity/LEFOOT" class="work-repo">https://github.com/udacity/LEFOOT</a>
+            </p>
+          </section>
+
+          <!-- Work 5 -->
+          <section class="col-4 center-text work">
+            <div class="each-work">
+              <a href="https://github.com/udacity/LEMODE">
+                <img src="./images/work-five.jpeg" alt="work image 2">
+                <div class="work-overlay">
+                  <h2>LE MODE</h2>
+                  <p>Be Different</p>
+                </div>
+              </a>
+            </div>
+
+            <h3 class="work-title">LE MODE</h3>
+            <p>
+              <a href="https://github.com/udacity/LEMODE" class="work-repo">https://github.com/udacity/LEMODE</a>
+            </p>
+          </section>
+
+          <!-- Work 6 -->
+          <section class="col-4 center-text work">
+            <div class="each-work">
+              <a href="https://github.com/udacity/DROP">
+                <img src="./images/work-six.jpeg" alt="work image 3" class="right">
+                <div class="work-overlay">
+                  <h2>DROP</h2>
+                  <p>Clear and Pure</p>
+                </div>
+              </a>
+            </div>
+
+            <h3 class="work-title work-side">DROP</h3>
+            <p>
+              <a href="https://github.com/udacity/DROP" class="work-repo">https://github.com/udacity/DROP</a>
+            </p>
+          </section>
         </div>
       </div>
 
-    </div>
-  </body>
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2015 Yuichi Hagio</p>
+      </footer>
 
+    </div>
+
+  </body>
 </html>

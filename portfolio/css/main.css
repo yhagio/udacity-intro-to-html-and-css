@@ -1,0 +1,213 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/***** FONT SETTINGS ******/
+body {
+  font-family: sans-serif;
+}
+
+h1, h3, h4, header, .main-overlay-text {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2.8em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.main-overlay-text {
+  font-size: 1.6em;
+}
+
+p {
+  font-weight: 200;
+}
+
+.work-title {
+  font-size: 1.5em;
+}
+
+/***** COLOR SETTINGS ******/
+h1, h3, h4 {
+  color: #747704;
+}
+
+h2, .work-repo {
+  color: #A9A;
+}
+
+
+/***** GENERAL ******/
+h4 {
+  margin-top: 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 0 50px 0;
+}
+
+header, .main-image, .work {
+  padding: 10px;
+}
+
+/***** HEADER ******/
+.profile-image-box {
+  display: none;
+}
+
+.col-6.profile-title{
+  width: 100%;
+}
+
+hr {
+  border: 1px solid #BCBBBB;
+  margin: 10px;
+}
+
+.name-title {
+  float: right;
+  line-height: 0;
+  clear: both;
+}
+/***** Main Image ******/
+
+.main-overlay-text {
+  padding-top: 20px;
+}
+
+.main-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-overlay {
+  position: absolute;
+  top: -410px;
+  left: 10px;
+  color: #fff;
+  z-index: 100;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.main-image:hover .main-overlay {
+  top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/***** Featured Work ******/
+.feature-title {
+  padding-left: 10px;
+}
+
+.each-work {
+  position: relative;
+  overflow: hidden;
+}
+
+.col-4.work {
+  width: 50%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.work-title {
+  line-height: 0;
+  clear: both;
+}
+
+.work-repo {
+  word-wrap: break-word;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #333;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  opacity: 0;
+}
+
+.each-work:hover .work-overlay{
+  left: 0;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+/***** FOOTER ******/
+footer {
+  width: 100%;
+  height: 20px;
+  padding-top: 10px;
+  text-align: center;
+  color: #879;
+}
+
+@media screen and (min-width: 620px) {
+  .main-overlay-text {
+    font-weight: 100;
+    font-size: 3em;
+    padding-top: 40px;
+  }
+
+  .profile-image-box {
+    display: block;
+  }
+
+  .profile-image {
+    width: 100px;
+    border-radius: 50px;
+  }
+
+  .col-6.profile-title {
+    width: 50%;
+  }
+
+  .work-title {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .main-overlay-text {
+    padding-top: 70px;
+  }
+
+  .work.col-4 {
+    width: 33.33%;
+  }
+}
