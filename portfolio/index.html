@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YUICHI HAGIO</title>
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100" rel="stylesheet">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>YUICHI HAGIO</title>
   </head>
 
   <body>
@@ -16,7 +16,7 @@
       <!-- Header -->
       <header class="row">
         <div class="col-6 profile-image-box">
-          <img src="./images/profile.jpg" alt="Profile Logo Image" class="profile-image">
+          <img src="./images/udacity-logo.jpg" alt="Profile Logo Image" class="profile-image">
         </div>
 
         <div class="col-6 profile-title">
@@ -30,12 +30,40 @@
       <!-- Main Image -->
       <div class="row">
         <div class="main-image col-12 center-text">
-          <img src="./images/mini-kitty.jpeg" srcset="./images/mini-kitty.jpeg 400w, ./images/small-kitty.jpeg 600w, ./images/large-kitty.jpeg 800w" alt="main image">
+          <img src="./images/mini-kitty.jpeg"
+               srcset="./images/mini-kitty.jpeg 400w,
+                       ./images/small-kitty.jpeg 600w,
+                       ./images/large-kitty.jpeg 800w"
+               sizes="100vw"
+               alt="main image">
           <div class="main-overlay center-text">
             <p class="main-overlay-text">I'm a Front-End Ninja</p>
           </div>
         </div>
       </div>
+
+      <!-- About Me -->
+      <section class="row">
+        <div class="col-12 feature-title">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="row about">
+          <div class="col-4 about-flex">
+            <div class="about-profile center-text">
+              <img src="./images/profile.jpg" alt="About Profile Image" class="about-image">
+            </div>
+          </div>
+
+          <div class="col-8 about-flex">
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <br /><br />
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Featured Works -->
       <div class="row">
@@ -52,16 +80,16 @@
               <a href="https://github.com/udacity/MUZIQUE">
                 <img src="./images/work-one.jpeg" alt="work image 1" class="left">
                 <div class="work-overlay">
-                  <h2>MUZIQUE</h2>
+                  <h2>MUZIK</h2>
                   <p>Simple and beautiful</p>
                 </div>
               </a>
             </div>
 
-            <h3 class="work-title work-side">MUZIQUE</h3>
-            <p>
-              <a href="https://github.com/udacity/MUZIQUE" class="work-repo">https://github.com/udacity/MUZIQUE</a>
-            </p>
+            <div class="work-detail">
+              <h3 class="work-title work-side">MUZIK</h3>
+              <a href="https://github.com/udacity/MUZIK" class="work-repo">https://github.com/udacity/MUZIK</a>
+            </div>
           </section>
 
           <!-- Work 2 -->
@@ -71,15 +99,15 @@
                 <img src="./images/work-two.jpeg" alt="work image 2">
                 <div class="work-overlay">
                   <h2>MEDINA</h2>
-                  <p>Elegant and addictive</p>
+                  <p>Elegant and sexy</p>
                 </div>
               </a>
             </div>
 
-            <h3 class="work-title">MEDINA</h3>
-            <p>
+            <div class="work-detail">
+              <h3 class="work-title">MEDINA</h3>
               <a href="https://github.com/udacity/MEDINA" class="work-repo">https://github.com/udacity/MEDINA</a>
-            </p>
+            </div>
           </section>
 
           <!-- Work 3 -->
@@ -94,10 +122,10 @@
               </a>
             </div>
 
-            <h3 class="work-title work-side">CRYPAS</h3>
-            <p>
+            <div class="work-detail">
+              <h3 class="work-title work-side">CRYPAS</h3>
               <a href="https://github.com/udacity/CRYPAS" class="work-repo">https://github.com/udacity/CRYPAS</a>
-            </p>
+            </div>
           </section>
 
           <!-- Work 4 -->
@@ -112,10 +140,10 @@
               </a>
             </div>
 
-            <h3 class="work-title work-side">LE FOOT</h3>
-            <p>
+            <div class="work-detail">
+              <h3 class="work-title work-side">LE FOOT</h3>
               <a href="https://github.com/udacity/LEFOOT" class="work-repo">https://github.com/udacity/LEFOOT</a>
-            </p>
+            </div>
           </section>
 
           <!-- Work 5 -->
@@ -130,10 +158,10 @@
               </a>
             </div>
 
-            <h3 class="work-title">LE MODE</h3>
-            <p>
+            <div class="work-detail">
+              <h3 class="work-title">LE MODE</h3>
               <a href="https://github.com/udacity/LEMODE" class="work-repo">https://github.com/udacity/LEMODE</a>
-            </p>
+            </div>
           </section>
 
           <!-- Work 6 -->
@@ -148,10 +176,10 @@
               </a>
             </div>
 
-            <h3 class="work-title work-side">DROP</h3>
-            <p>
+            <div class="work-detail">
+              <h3 class="work-title work-side">DROP</h3>
               <a href="https://github.com/udacity/DROP" class="work-repo">https://github.com/udacity/DROP</a>
-            </p>
+            </div>
           </section>
         </div>
       </div>
