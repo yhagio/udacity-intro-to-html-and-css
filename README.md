@@ -1,5 +1,7 @@
 ### Simple Portfolio Page with HTML and CSS (No library or framework)
 
+![screenshot](/screenshot.png)
+
 **Updated on Aug 14, 2015**
 - Replaced single quotation with double.
 - Removed unnecessary attributes from `<link>`
